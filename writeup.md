@@ -88,8 +88,8 @@ To train the model, I use the Adam optimizer as a default choice, and it works w
 
 My final model results were:
 * training set accuracy of 100%
-* validation set accuracy of 93.1% 
-* test set accuracy of 93.3%
+* validation set accuracy of 93.5% 
+* test set accuracy of 94.2%
 
 * I start with LeNet-5 as recomended.
 * But the accuracy barely reached 90%
@@ -115,14 +115,14 @@ Here are the results of the prediction:
 
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 30km/h      			| 80km/h   										| 
+| 30km/h      			| 60km/h   										| 
 | Priority road 		| Priority road 								|
 | Stop					| Priority road									|
 | No entry	      		| No entry					 					|
 | Keep right			| Keep right      								|
 
 
-The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%. This is not good compares  to the accuracy on the test set of 93.3%
+The model was able to correctly guess 3 of the 5 traffic signs, which gives an accuracy of 60%. This is not good compares  to the accuracy on the test set of 94.2%
 
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. (OPTIONAL: as described in the "Stand Out Suggestions" part of the rubric, visualizations can also be provided such as bar charts)
 
@@ -132,11 +132,11 @@ For the first image, the model is relatively sure that this is a stop sign (prob
 
 | Probability	        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| 93.61%      			| 80km/h   										| 
+| 100.00%      			| 60km/h   										| 
 | 100.00% 				| Priority road 								|
-| 77.34%				| Priority road									|
+| 100.00%				| Priority road									|
 | 100.00%	      		| No entry					 					|
-| 100.00%				| Keep right      								|
+| 99.87%				| Keep right      								|
 
 
 For the first an third image, the network fails to classify the right sign. But I think they are clean and nice, later I'll visualizing the output to find some clue.
